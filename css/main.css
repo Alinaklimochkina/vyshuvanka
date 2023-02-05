@@ -1,0 +1,454 @@
+body {
+	font: 12px/14px 'AvertaCY-Regular',Tahoma,Geneva,sans-serif;
+	line-height: normal;
+	 margin: 0 ;
+	 background-color: rgb(168,168,168);
+	 text-decoration: none;
+	 color: white;
+	 max-width: 1400px;
+
+	 
+}
+.container{
+	color: white;
+	flex: top;
+
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 80px;
+}
+.nav__list {
+	display: flex;
+	column-gap: 80px;
+	font-size: 19px;
+	font-weight: 500;
+}
+.nav__list a {
+	position: relative;
+}
+.nav__list a.active::after,
+.nav__list a:hover::after {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	right: 10px;
+	bottom: -6px;
+
+	display: block;
+	/* width: 35px; */
+	height: 4px;
+	background-color: #c4c4c4;
+	border-radius: 50px;
+}
+.nav__list.nav__list--footer a.active::after,
+.nav__list.nav__list--footer a:hover::after {
+    display: none;
+}
+.nav__list.nav__list--footer a.active,
+.nav__list.nav__list--footer a:hover {
+    color: #5F9EA0;
+}
+
+.nav__login {
+	font-family: 'COMIC SANS MS';
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
+	margin-right: 10px;
+	font-size: 15px;
+	font-weight: 500;
+}
+.logo {
+	font-size: 22px;
+	color:black;
+	font-weight: 700;
+	margin-left: 15px;
+	font-family: 'COMIC SANS MS';
+
+}
+
+.header {
+	text-decoration: none;
+	overflow: hidden;
+	position: relative;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.header a {
+	color: black;
+	 text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: 25px 45px;
+    color: #fff !important;
+
+	background: #8b7371;
+	border-radius: 27px;
+
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.btn:hover {
+	color: rgb(245, 233, 127) !important;
+	transition: color 0.2s ease-in;
+}
+
+.btn:active {
+	position: relative;
+	top: 1px;
+}
+.btn--login {
+    padding: 13px 44px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 100px;
+}top: ;
+.bt{
+	background-color: black;
+	padding-top: 50px;
+}
+.ida{
+	float: right;
+}
+.nadpis{
+	float: left;
+	color: black;
+	 font-family: 'COMIC SANS MS';
+	 font-size: 38px;
+	 margin-left: 200px;
+	 margin-top: 60px;
+	 word-spacing: 2.7em;
+	 transform:skew(15deg);
+	 text-shadow: red 1px 0 10px;
+}
+.nadpis2{
+	float: left;
+	color: black;
+	 font-family: 'COMIC SANS MS';
+	 font-size: 36px;
+	 margin-left: 320px;
+	 text-shadow: red 1px 0 10px;
+	 word-spacing: 2.7em;
+	 transform:skew(15deg);
+}
+
+.round {
+	margin-top: 400px;
+	margin-left: 70px;
+  width: 7em;
+  height: 7em;
+  border: 2px solid #8b7371;
+  border-radius: 50%;
+  line-height: 4em;  /* подробнее про line-height */
+  text-align: center;  /* выравнять текст по середине по горизонтали */
+  background:#8b7371;
+}
+.round a{
+	color: black;
+	text-decoration: none;
+	transition: 0.6s linear;
+}
+.round a:hover{
+	color: #cc0000; 
+}
+.round:hover {
+  box-shadow: inset 0 0 0 10px #cc0000;
+}
+.cun img{
+	float: left;
+	margin-left: 50px;
+margin-top: 100px;
+width: 220px;
+height: 310px;
+
+}
+.text{
+	font-size: 18px;
+	float: right;
+	color: black;
+	margin-top: 10px;
+	padding-left: 40px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	background-color: #a28f7e;
+	border-radius: 5%;
+}
+.video_box{
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+.js .tabs_box .tabs_b.visible {
+    display: block;
+}
+.full_content-info{
+padding-top: 120px;
+	margin-left:300px ;
+}
+.li {
+	background-color: black;
+	text-decoration: none;
+    text-align: -webkit-match-parent;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.full_info li:nth-child(2n+1) {
+    background-color: #1e1d2175;
+}
+.full_info li {
+    padding: 0 10px 7px 110px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.age16 {
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #f97709;
+}
+.full_info a{
+	text-decoration: none;
+	color: black;
+}
+.vis span{
+	color: ;
+
+}
+
+.button, .ps_link, .mask {
+    -webkit-transition: color .3s,background-color .3s,opacity .3s;
+    -moz-transition: color .3s,background-color .3s,opacity .3s;
+    -ms-transition: color .3s,background-color .3s,opacity .3s;
+    -o-transition: color .3s,background-color .3s,opacity .3s;
+    transition: color .3s,background-color .3s,opacity .3s;
+}
+.button, .pagi-load a, .up-second li a, .up-edit a, .qq-upload-button, button:not(.color-btn):not([class*=fr]), html input[type="button"], input[type="reset"], input[type="submit"], .meta-fav a {
+    padding: 0 20px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #8b7371;
+    color: #fff;
+    float: right;
+    margin-right: 30px;
+}
+.full_content-inner--title {
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 30px 10px 25px;
+}
+.form2{
+	padding-left: 200px;
+}
+.full_content-inner{
+	color: black;
+}
+input, select {
+    vertical-align: middle;
+}
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+user agent stylesheet
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.sylka{
+	display: flex;
+	
+	float: right;
+}
+.logo1{
+	display: flex;
+	background-color: grey;
+	
+	margin-top: 90px;
+	float: left;
+}
+.footer{
+	 position: absolute;
+	margin-top: 60px;
+	color: black;
+	font-size: 10px;
+    background-color: #1e1d2175;
+    padding: 2px;
+   width: 100%;
+}
+.titlee{
+	margin-top: 30px;
+	margin-left: 500px;
+	color: black;
+	font-size: 28px;
+	font-family: Brush Script MT, Brush Script Std, fantasy ;
+}
+.foto1{
+	margin-left: 20px;
+	float: left;
+}
+.foto3{
+	margin-right: 20px;
+	float: right;
+}
+.foto2{
+	margin-left: 500px;
+	margin-top: 80px;
+}
+.liniy{
+	position: absolute;
+	margin-top: 60px;
+	color: black;
+	font-size: 10px;
+    background-color: #8b7371;
+    padding: 14px;
+   width: 100%;
+}
+.luz{
+	float: left;
+	margin-left: 20px;
+}
+.luz img{
+margin-top: 130px;
+	border-radius: 50%;
+}
+
+.luzop{
+	font-size: 14px;
+	color: black;
+	margin-left: 190px;
+margin-top: 150px;
+margin-right: 40px;
+}
+.emiti{
+	float: right;
+	margin-right: 40px;
+	margin-top: 80px;
+	
+}
+.emiti img{
+
+	border-radius: 50%;
+}
+.emitiop{
+	font-size: 14px;
+	color: black;
+	margin-left: 40px;
+	margin-top: 120px;
+}
+
+.idaa{
+	margin-left: 20px;
+	margin-top: 30px;
+	float: left;
+}
+.idaa img{
+	border-radius: 50%;
+}
+.idaop{
+	font-size: 14px;
+	color: black;
+	margin-left: 190px;
+	margin-top: 60px;
+}
+.rein{
+	float: right;
+	margin-right: 40px;
+	margin-top: 80px;
+}
+.rein img{
+	border-radius: 50%;
+}
+.reinop{
+	font-size: 14px;
+	color: black;
+	margin-left: 40px;
+	margin-top: 120px;
+}
+
+.korol{
+	margin-left: 20px;
+	margin-top: 30px;
+	float: left;
+}
+.korol img{
+	border-radius: 50%;
+}
+.korolop{
+	font-size: 14px;
+	color: black;
+	margin-left: 190px;
+	margin-top: 60px;
+}
+.lilit{
+	float: right;
+	margin-right: 40px;
+	margin-top: 80px;
+}
+.lilit img{
+	border-radius: 50%;
+}
+.lilitop{
+	font-size: 14px;
+	color: black;
+	margin-left: 40px;
+	margin-top: 120px;
+}
